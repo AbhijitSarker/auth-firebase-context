@@ -4,7 +4,7 @@ import { AuthContext } from './provider/AuthProvider';
 
 const Register = () => {
     const { user, createUser } = useContext(AuthContext)
-    console.log(createUser)
+    // console.log(createUser)
 
     const handleRegister = (event) => {
         event.preventDefault();
@@ -51,7 +51,7 @@ const Register = () => {
                             <input type="password" placeholder="password" name='password' className="input input-bordered" required />
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Login</button>
+                            <button className="btn btn-primary">Register</button>
                         </div>
                     </form>
                     <Link to='/login'><button className='btn btn-active btn-link text-white'>Already have an account?</button></Link>
